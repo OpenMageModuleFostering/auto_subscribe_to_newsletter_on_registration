@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Oxegena_SubscribeAtCheckout>
+      <version>1.0.0</version>
+    </Oxegena_SubscribeAtCheckout>
+  </modules>
+  <global>
+    <models>
+      <subscribeatcheckout>
+        <class>Oxegena_SubscribeAtCheckout_Model</class>
+      </subscribeatcheckout>
+    </models>
+    <events>
+      <checkout_submit_all_after> <!-- identifier of the event we want to catch -->
+        <observers>
+          <checkout_submit_all_after_handler> <!-- identifier of the event handler -->
+            <type>singleton</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>subscribeatcheckout/observer</class> <!-- observers class alias -->
+            <method>AssignNewletter</method>  <!-- observer's method to be called -->
+          </checkout_submit_all_after_handler>
+        </observers>
+      </checkout_submit_all_after>
+	  <customer_register_success> <!-- identifier of the event we want to catch -->
+        <observers>
+          <customer_register_success_handler> <!-- identifier of the event handler -->
+            <type>singleton</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>subscribeatcheckout/observer</class> <!-- observers class alias -->
+            <method>AssignNewletterFromRegister</method>  <!-- observer's method to be called -->
+          </customer_register_success_handler>
+        </observers>
+      </customer_register_success>
+    </events>
+  </global>	
+</config> 

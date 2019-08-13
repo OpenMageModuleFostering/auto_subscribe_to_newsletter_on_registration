@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>Auto_Subscribe_to_Newsletter_on_registration</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Enable automatic customer's subscription to your newsletter when they register to your shop.</summary>
+    <description>By default, when a customer registers to your shop (either through the sign-in link, either through the check-out process), he isn't automatically subscribed to your newsletter.&#xD;
+&#xD;
+This extension allows to automatically subscribe your customer to your newsletter when they register to your shop.&#xD;
+&#xD;
+You can setup if you want to activate it:&#xD;
+- on customer registration&#xD;
+- on customer registration during check out&#xD;
+&#xD;
+Email confirmation are still being sent to the customer mentionning that he is now subscribed to the Newsletter.</description>
+    <notes>First release</notes>
+    <authors><author><name>Alban Staehli</name><user>albans</user><email>alban.staehli@oxegena.ch</email></author></authors>
+    <date>2017-01-09</date>
+    <time>23:24:38</time>
+    <contents><target name="magelocal"><dir name="."><dir name="Oxegena"><dir><dir name="SubscribeAtCheckout"><dir name="Model"><file name="Observer.php" hash="c0f8fa0e4f368eadeddba951e5f661d2"/></dir><dir name="etc"><file name="config.xml" hash="aa50afbfbbe5c556084eec3c3cdf99f2"/><file name="system.xml" hash="68b329da9893e34099c7d8ad5cb9c940"/></dir></dir><dir name="SubscribeAtCheckoutConfig"><dir name="Helper"><file name="Data.php" hash="bbfe946b909a6b1fb47a30ca52b1e576"/></dir><dir name="Model"><file name="Options.php" hash="b7e976e3624960dd8bc5cccdc2bda998"/></dir><dir name="etc"><file name="config.xml" hash="aab9dab11f1f1c841c0ddecfe99cf109"/><file name="system.xml" hash="87f6910eca6cff2a975a73c9fd12bae3"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="."><dir name="modules"><file name="Oxegena_SubscribeAtCheckout.xml" hash="3c5e2b06ac6b84fe900a3aeebdf818aa"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

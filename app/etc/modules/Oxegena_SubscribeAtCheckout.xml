@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Oxegena_SubscribeAtCheckout>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>1.0.0</version>
+    </Oxegena_SubscribeAtCheckout>
+    <Oxegena_SubscribeAtCheckoutConfig>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>1.0.0</version>
+    </Oxegena_SubscribeAtCheckoutConfig>
+  </modules>
+</config>

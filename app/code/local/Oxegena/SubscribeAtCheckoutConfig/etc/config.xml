@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oxegena_SubscribeAtCheckoutConfig>
+            <version>1.0.0</version>
+        </Oxegena_SubscribeAtCheckoutConfig>
+    </modules>
+    <global>
+        <helpers>
+            <oxegenaconfig>
+                <class>Oxegena_SubscribeAtCheckoutConfig_Helper</class>
+            </oxegenaconfig>
+        </helpers>
+        <models>
+             <oxegenaconfig>
+                <class>Oxegena_SubscribeAtCheckoutConfig_Model</class>
+             </oxegenaconfig>
+        </models>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <oxegenaconfig_subscribeatcheckout>
+                                            <title>Subscribe At Checkout</title>
+                                        </oxegenaconfig_subscribeatcheckout>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
