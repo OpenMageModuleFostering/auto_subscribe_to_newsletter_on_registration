@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Enable automatic customer's subscription to your newsletter when they register to your shop.

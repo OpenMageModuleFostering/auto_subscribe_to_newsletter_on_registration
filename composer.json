@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Auto_Subscribe_to_Newsletter_on_registration",
+    "name": "openmage-module-fostering\/auto_subscribe_to_newsletter_on_registration",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Enable automatic customer's subscription to your newsletter when they register to your shop.",
     "authors": [
